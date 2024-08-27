@@ -1,14 +1,16 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { Outlet } from "react-router-dom";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="p-10 md:px-48 xl:px-80 bg-[#0E0C15]">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };

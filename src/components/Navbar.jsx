@@ -154,8 +154,8 @@ const Navbar = () => {
     //   </div>
     //   <div className="hidden md:block">try now</div>
     // </nav>
-    <nav className="bg-[#0E0C15] text-white px-10 py-5 md:px-24 md:py-10">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-[#0E0C15] text-white px-10 py-5 md:px-48 xl:px-80 md:py-10">
+      <div className="flex justify-between items-center">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
