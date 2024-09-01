@@ -154,7 +154,7 @@ const Navbar = () => {
     //   </div>
     //   <div className="hidden md:block">try now</div>
     // </nav>
-    <nav className="bg-[#0E0C15] text-white px-10 py-5 md:px-48 xl:px-80 md:py-10">
+    <nav className="bg-[#0E0C15] text-white px-10 py-5 md:px-36 xl:px-80 md:py-10">
       <div className="flex justify-between items-center">
         <Link to="/">
           <img src={logo} alt="logo" />
@@ -228,21 +228,36 @@ const Navbar = () => {
               </svg>
             </div>
             <div className="absolute left-0 mt-2 w-48 bg-[#0E0C15] shadow-lg rounded-lg py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <div className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer">
+              <a
+                href="#trips"
+                className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer"
+              >
                 Trips
-              </div>
-              <div className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer">
+              </a>
+              <a
+                href="#expense"
+                className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer"
+              >
                 Expense
-              </div>
-              <div className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer">
+              </a>
+              <a
+                href="#client"
+                className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer"
+              >
                 Client
-              </div>
-              <div className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer">
+              </a>
+              <a
+                href="#todo"
+                className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer"
+              >
                 To Do List
-              </div>
-              <div className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer">
+              </a>
+              <a
+                href="#task"
+                className="block px-4 py-2 text-white hover:bg-gray-800 cursor-pointer"
+              >
                 Task Management
-              </div>
+              </a>
             </div>
           </li>
           <li className="relative group">
