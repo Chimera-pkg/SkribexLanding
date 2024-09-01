@@ -154,7 +154,7 @@ const Navbar = () => {
     //   </div>
     //   <div className="hidden md:block">try now</div>
     // </nav>
-    <nav className="bg-[#0E0C15] text-white px-10 py-5 md:px-36 xl:px-80 md:py-10">
+    <nav className="bg-[#0E0C15] text-white px-10 py-5 md:px-36 xl:px-80 md:py-10 fixed top-0 z-10 w-full bg-transparent backdrop-blur-lg">
       <div className="flex justify-between items-center">
         <Link to="/">
           <img src={logo} alt="logo" />
@@ -336,44 +336,49 @@ const Navbar = () => {
             </button>
             <ul className="pl-4 space-y-2">
               <li>
-                <div
+                <a
+                  href="#trips"
                   className="block text-white hover:bg-gray-700 px-4 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Trips
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
+                  href="#expense"
                   className="block text-white hover:bg-gray-700 px-4 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Expense
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
+                  href="#client"
                   className="block text-white hover:bg-gray-700 px-4 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Client
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
+                  href="#todo"
                   className="block text-white hover:bg-gray-700 px-4 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   To Do List
-                </div>
+                </a>
               </li>
               <li>
-                <div
+                <a
+                  href="#task"
                   className="block text-white hover:bg-gray-700 px-4 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Task Management
-                </div>
+                </a>
               </li>
             </ul>
           </li>
