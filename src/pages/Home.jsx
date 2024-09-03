@@ -7,6 +7,10 @@ import playStore from "../assets/images/play_store.png";
 import appStpre from "../assets/images/app_store.png";
 import review from "../data/review";
 import Accordion from "../components/Accordion";
+import homeMap from "../assets/videos/home-map.mp4";
+import homeExpense from "../assets/videos/home-expense.mp4";
+import homeClient from "../assets/videos/home-client.mp4";
+import homeTodo from "../assets/videos/home-todo.mp4";
 
 const Home = () => {
   return (
@@ -43,11 +47,13 @@ const Home = () => {
         className="mb-20 flex flex-col items-center gap-10 xl:flex-row xl:justify-between"
       >
         <div className="xl:w-1/3">
-          <img
-            src={trips}
-            alt="phone section"
-            className="min-h-[540px] min-w-[243px]"
-          />
+          <video
+            src={homeMap}
+            autoPlay
+            muted
+            loop
+            className="h-[540px] min-w-[243px]"
+          ></video>
         </div>
         <div className="text-white xl:w-2/3">
           <h1 className="text-4xl xl:text-6xl font-bold text-center mb-20">
@@ -81,13 +87,13 @@ const Home = () => {
             interdum hendrerit.
           </p>
         </div>
-        {/* <div className="xl:w-1/3"> */}
-        <img
-          src={trips}
-          alt="phone section"
-          className="min-h-[540px] min-w-[243px]"
-        />
-        {/* </div> */}
+        <video
+          src={homeExpense}
+          autoPlay
+          muted
+          loop
+          className="h-[540px] min-w-[243px]"
+        ></video>
       </section>
 
       <section
@@ -95,11 +101,18 @@ const Home = () => {
         className="mb-20 flex flex-col items-center gap-10 xl:flex-row xl:justify-between"
       >
         <div className="xl:w-1/3">
-          <img
+          {/* <img
             src={trips}
             alt="phone section"
             className="min-h-[540px] min-w-[243px]"
-          />
+          /> */}
+          <video
+            src={homeClient}
+            autoPlay
+            muted
+            loop
+            className="h-[540px] min-w-[243px]"
+          ></video>
         </div>
         <div className="text-white xl:w-2/3">
           <h1 className="text-4xl xl:text-6xl font-bold text-center mb-20">
@@ -133,13 +146,13 @@ const Home = () => {
             interdum hendrerit.
           </p>
         </div>
-        {/* <div className="xl:w-1/3"> */}
-        <img
-          src={trips}
-          alt="phone section"
-          className="min-h-[540px] min-w-[243px]"
-        />
-        {/* </div> */}
+        <video
+          src={homeTodo}
+          autoPlay
+          muted
+          loop
+          className="h-[540px] min-w-[243px]"
+        ></video>
       </section>
 
       <section
